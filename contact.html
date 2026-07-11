@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Hōʻola ʻŌiwi Foundation</title>
+    <meta
+      name="description"
+      content="Contact Hōʻola ʻŌiwi Foundation."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Hōʻola ʻŌiwi Foundation home">
+        <span class="brand-mark" aria-hidden="true">HŌ</span>
+        <span>Hōʻola ʻŌiwi Foundation</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="mission.html">Mission</a>
+        <a href="waiu.html">Waiū Project</a>
+        <a href="kaiaulu.html">Kaiāulu Project</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section page-section contact-section">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="section-label">Contact</p>
+            <h1 class="page-title">Stay Connected</h1>
+            <p>
+              Website coming soon. More updates will be shared as our projects
+              grow.
+            </p>
+            <a class="email-link" href="mailto:info@hoolaoiwi.org">
+              info@hoolaoiwi.org
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label class="checkbox-label">
+              <input name="updates" type="checkbox" value="yes">
+              I would like project updates.
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write a short message..."></textarea>
+            </label>
+            <button class="button button-accent" type="submit">Send Message</button>
+            <p class="form-note">
+              This opens your email app so you can review before sending.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Hōʻola ʻŌiwi Foundation</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
