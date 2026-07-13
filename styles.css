@@ -193,6 +193,14 @@ img {
   font-size: clamp(1.08rem, 2vw, 1.28rem);
 }
 
+.hero-subheading {
+  max-width: 760px;
+  margin-top: 20px;
+  color: rgba(255, 248, 234, 0.94);
+  font-size: clamp(1.12rem, 2.2vw, 1.38rem);
+  font-weight: 700;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +222,37 @@ img {
 
 .section-soft {
   background: var(--cream-deep);
+}
+
+.vision-section {
+  background: var(--cream);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.values-grid article {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid rgba(20, 63, 52, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 36px rgba(20, 63, 52, 0.08);
+}
+
+.values-grid h3 {
+  margin: 0;
+  color: var(--green);
+  font-size: 1.12rem;
+}
+
+.values-grid p {
+  margin-top: 8px;
+  color: var(--brown-dark);
+  font-weight: 700;
 }
 
 .waiu-section {
@@ -644,6 +683,20 @@ img {
   font-size: 0.95rem;
 }
 
+.site-footer .footer-motto {
+  max-width: 780px;
+  margin: 14px auto 0;
+  color: rgba(255, 248, 234, 0.92);
+  font-weight: 700;
+}
+
+.site-footer .footer-translation {
+  max-width: 780px;
+  margin: 6px auto 0;
+  color: rgba(255, 248, 234, 0.72);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 760px) {
   .site-header {
     position: static;
@@ -685,6 +738,10 @@ img {
   }
 
   .kaiaulu-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
     grid-template-columns: 1fr;
   }
 

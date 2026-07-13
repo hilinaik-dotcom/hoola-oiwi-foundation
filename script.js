@@ -20,6 +20,6 @@ if (contactForm) {
       `Name: ${name}\nEmail: ${email}\nWants updates: ${updates}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:info@hoolaoiwi.org?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hoolaoiwi@outlook.com?subject=${subject}&body=${body}`;
   });
 }
